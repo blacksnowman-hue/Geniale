@@ -1,0 +1,43 @@
+.services-section {
+    padding: 100px;
+    background-color: #0693e3;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Grid container for services */
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Ensure items wrap when screen size is smaller */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Styling for each service item */
+.service-item {
+    background-color:  #0693e3;
+    padding: 20px;
+  
+
+    width: 23%;  /* Adjust width to fit 4 items on larger screens */
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;  /* Stack items vertically on smaller screens */
+    }
+
+    .service-item {
+        width: 90%;  /* Make items take full width in smaller screens */
+    }
+}

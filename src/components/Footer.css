@@ -1,0 +1,48 @@
+.footer {
+    background-color: white;
+   
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color:#0693e3;
+    text-decoration: none;
+    font-size: 16px; /* Base font size for the text */
+}
+
+/* Increase icon size */
+.social-links a i {
+    font-size: 24px; /* Increased size of icons */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect for icon */
+.social-links a:hover i {
+    transform: scale(1.2); /* Scale the icon size up by 20% */
+}
+
+.footer-contact p {
+
+    color:#0693e3 ;
+}

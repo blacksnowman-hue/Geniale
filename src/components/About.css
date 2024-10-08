@@ -1,0 +1,71 @@
+.about-section {
+    padding: 100px;
+    background-color: #0693e3;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* Default: text on the right, images on the left */
+}
+
+.text-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 16px;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px;
+    flex: 1;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for images */
+.image-collage img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack text on top of images */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-bottom: 20px; /* Add space below the text */
+        text-align: center; /* Center the text on mobile */
+    }
+
+    .image-collage {
+        grid-template-columns: 1fr 1fr; /* Ensure two images per row */
+    }
+
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+}
